@@ -18,7 +18,8 @@
     "production": "./node_modules/.bin/gulp --production",
     "build": "./node_modules/.bin/gulp --production --build && ./build.sh",
     "watch": "./node_modules/.bin/gulp watch",
-    "vendor": "./node_modules/.bin/gulp vendor"
+    "vendor": "./node_modules/.bin/gulp vendor",
+    "publish": "s3-deploy './build/**' --cwd './build/' --region eu-west-1 --bucket makeitshort.co.uk --profile serverless-admin --signatureVersion v4"
   },
   "devDependencies": {
     "babel-core": "^5.0.0",
@@ -39,6 +40,7 @@
     "metalsmith-markdown": "^0.2.1",
     "minimist": "^1.2.0",
     "moment": "^2.10.6",
+    "s3-deploy": "^0.7.3",
     "serve-static": "^1.10.0",
     "webpack": "^1.12.1"
   },
