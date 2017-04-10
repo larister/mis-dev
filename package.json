@@ -12,13 +12,13 @@
   "homepage": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "./node_modules/.bin/gulp",
-    "start": "./node_modules/.bin/gulp server",
-    "debug": "DEBUG=metalsmith* ./node_modules/.bin/gulp",
-    "production": "./node_modules/.bin/gulp --production",
-    "build": "./node_modules/.bin/gulp --production --build && ./build.sh",
-    "watch": "./node_modules/.bin/gulp watch",
-    "vendor": "./node_modules/.bin/gulp vendor",
+    "dev": "gulp",
+    "start": "gulp server",
+    "debug": "DEBUG=metalsmith* gulp",
+    "production": "gulp --production",
+    "build": "gulp --production --build && ./build.sh",
+    "watch": "gulp watch",
+    "vendor": "gulp vendor",
     "publish": "s3-deploy './build/**' --cwd './build/' --region eu-west-1 --bucket makeitshort.co.uk --profile serverless-admin --signatureVersion v4"
   },
   "devDependencies": {
@@ -46,6 +46,6 @@
   },
   "dependencies": {
     "jquery": "^2.1.4",
-    "bootstrap": "https://github.com/twbs/bootstrap/archive/v4.0.0-alpha.2.tar.gz"
+    "bootstrap": "https://github.com/twbs/bootstrap/archive/v4.0.0-alpha.6.tar.gz"
   }
 }
