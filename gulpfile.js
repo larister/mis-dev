@@ -95,7 +95,8 @@ gulp.task('webpack', function(callback) {
   var webpackPlugins = [
       new webpack.ProvidePlugin({
         $: "jquery",
-        jQuery: "jquery"
+        jQuery: "jquery",
+        Util: 'exports?Util!bootstrap/js/dist/util'
       }),
       new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.js'),
       new webpack.DefinePlugin({
@@ -139,7 +140,6 @@ gulp.task('webpack', function(callback) {
       return callback(err);
     }
 
-    //console.log(stats.toString({}));
     callback();
   });
 });
@@ -163,7 +163,7 @@ gulp.task('server', ['default', 'watch'], function(callback) {
   var finalhandler = require('finalhandler');
 
   var serve = serveStatic(site.metalsmith.config.destRoot, {
-    "index": ['index.html', 'index.htm']
+    extensions: ['html', 'htm']
   });
 
   var server = http.createServer(function(req, res){

@@ -19,3 +19,16 @@
   text-align: right;
   text-transform: uppercase;
 }
+
+.navigation-menu .dropdown-item {
+  font-size: 11px;
+}
+
+.navigation-menu .menu-link {
+  color: rgb(153, 153, 153);
+}
+
+.navigation-menu .menu-link:hover,
+.navigation-menu .menu-link:focus {
+  text-decoration: none;
+}
