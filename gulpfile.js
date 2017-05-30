@@ -1,5 +1,6 @@
 // Common
 var path = require('path');
+var fs = require('fs');
 var argv = require('minimist')(process.argv.slice(2));
 var gulp = require('gulp');
 var Metalsmith = require('metalsmith');
@@ -21,6 +22,13 @@ var args = {
   build: !!argv.build,
   production: !!argv.production
 };
+
+const PAGES = [
+  'about',
+  'contact',
+  'filmmakers',
+  'project'
+];
 
 // Metalsmith
 function setupMetalsmith(callback) {
@@ -59,6 +67,13 @@ function setupMetalsmith(callback) {
       console.log(err);
       return callback(err);
     }
+
+    PAGES.forEach(page => {
+      fs.renameSync(
+        path.join(msconfig.config.destRoot,`${page}.html`),
+        path.join(msconfig.config.destRoot, page)
+      );
+    });
 
     callback();
   });
