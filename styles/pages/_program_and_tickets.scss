@@ -1,0 +1,54 @@
+.program--tbl {
+    border-radius: 4px;
+    border: 1px solid #dfdfe0;
+    width: 100%;
+
+    tr {
+      border-bottom: 1px solid #dfdfe0;
+    }
+
+    td {
+      padding: 4px 9px;
+    }
+
+    td:first-child {
+      background-color: #efefef;
+      text-align: center;
+
+        .program--days {
+          font-size: 1.5em;
+          font-weight: bolder;
+          line-height: 1.0;
+        }
+
+        .program--dates {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+    }
+
+    td:nth-child(2) {
+        width: 60%;
+        padding-left: 20px;
+        line-height: 3;
+
+        .pass--type {
+            font-size: 2.5em;
+            font-weight: bolder
+        }
+
+        .pass--description {
+            font-size: 1.2em;
+            font-weight: bold;
+            line-height: normal;
+            margin-bottom: 10px;
+        }
+
+        .pass--timings {
+            font-size: 0.9em;
+            line-height: normal;
+            color: #555;
+        }
+    }
+
+}
