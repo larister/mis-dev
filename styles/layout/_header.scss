@@ -10,6 +10,17 @@
   vertical-align: middle;
 }
 
+@media (max-width: 800px) {
+  .header-left {
+    display: none;
+  }
+
+  .header-right {
+    text-align: center !important; // Should use better specificity instead
+    margin-top: 10px;
+  }
+}
+
 .header-center {
   text-align: center;
 }

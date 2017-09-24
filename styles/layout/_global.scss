@@ -3,6 +3,14 @@ body {
   font-size: 14px;
 }
 
+@media (max-width: 800px) {
+  font-size: 12px;
+}
+
 .container-fluid {
   padding: 20px;
+}
+
+* {
+  box-sizing: border-box;
 }
