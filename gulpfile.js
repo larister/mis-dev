@@ -16,6 +16,9 @@ var site = require('./site');
 var Handlebars = require('handlebars');
 var HandlebarsLib = require('./lib/handlebars')(Handlebars);
 
+// Image metadata
+var generateBackgroundImageMetadata = require('./src/generateBackgroundImageMetadata');
+
 // Configuration
 var args = {
   build: !!argv.build,
@@ -91,6 +94,11 @@ gulp.task('styles', function() {
     .pipe(gulp.dest(path.join(__dirname, site.metalsmith.config.assetRoot, 'assets')));
 });
 
+gulp.task('generateData', function(callback) {
+  generateBackgroundImageMetadata();
+  callback();
+})
+
 gulp.task('webpack', function(callback) {
   var webpackPlugins = [
       new webpack.ProvidePlugin({
@@ -144,7 +152,7 @@ gulp.task('webpack', function(callback) {
   });
 });
 
-gulp.task('scripts', ['webpack']);
+gulp.task('scripts', ['webpack', 'generateData']);
 
 gulp.task('watch', ['default'], function() {
   gulp.watch(['gulpfile.js', 'site.js'], ['default']);
