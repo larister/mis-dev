@@ -1,5 +1,11 @@
 [
     {
+        "path": "./assets/images/background/A---drone-flying-4.jpg",
+        "height": 133,
+        "width": 200,
+        "type": "jpg"
+    },
+    {
         "path": "./assets/images/background/CITPATI_Filmstill_2K_002.jpg",
         "height": 84,
         "width": 200,
@@ -138,6 +144,12 @@
         "type": "jpg"
     },
     {
+        "path": "./assets/images/background/Poster Fotoscena5_HP.jpg",
+        "height": 113,
+        "width": 200,
+        "type": "jpg"
+    },
+    {
         "path": "./assets/images/background/Poster NICOLES_CAGE_Still_Riesenrad.jpg",
         "height": 108,
         "width": 200,
@@ -148,5 +160,53 @@
         "height": 195,
         "width": 200,
         "type": "jpg"
+    },
+    {
+        "path": "./assets/images/background/Screen Shot 2017-09-28 at 19.00.25.png",
+        "width": 200,
+        "height": 220,
+        "type": "png"
+    },
+    {
+        "path": "./assets/images/background/Screen Shot 2017-09-28 at 19.00.52.png",
+        "width": 200,
+        "height": 147,
+        "type": "png"
+    },
+    {
+        "path": "./assets/images/background/Screen Shot 2017-09-28 at 19.09.34.png",
+        "width": 200,
+        "height": 181,
+        "type": "png"
+    },
+    {
+        "path": "./assets/images/background/Zylo film school pic5.jpg",
+        "height": 121,
+        "width": 200,
+        "type": "jpg"
+    },
+    {
+        "path": "./assets/images/background/Zylo film school pic6.jpg",
+        "height": 112,
+        "width": 200,
+        "type": "jpg"
+    },
+    {
+        "path": "./assets/images/background/vlcsnap-2017-09-25-10h36m57s370.png",
+        "width": 200,
+        "height": 114,
+        "type": "png"
+    },
+    {
+        "path": "./assets/images/background/vlcsnap-2017-09-25-10h39m26s212.png",
+        "width": 200,
+        "height": 114,
+        "type": "png"
+    },
+    {
+        "path": "./assets/images/background/vlcsnap-2017-09-25-10h41m32s301.png",
+        "width": 200,
+        "height": 114,
+        "type": "png"
     }
 ]
