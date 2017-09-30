@@ -21,20 +21,18 @@ function createImage(imageMetadata, sidebar) {
 function addImagesToSidebar(imagesMetadata, sidebar, mainContentHeight) {
   let totalHeight = 0;
 
-  const totalImageHeight = imagesMetadata.reduce((memo, data) => memo + data.height, 0);
-
   shuffleArray(imagesMetadata);
 
   let nextIndex = 0;
 
   while(true) {
-    let randomImage = imagesMetadata[nextIndex];
-
-    if(nextIndex === imagesMetadata.length) {
+    if(nextIndex === (imagesMetadata.length - 1)) {
       nextIndex = 0;
     } else {
       nextIndex++;
     }
+
+    let randomImage = imagesMetadata[nextIndex];
 
     totalHeight += randomImage.height;
 

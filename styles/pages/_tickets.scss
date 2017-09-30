@@ -1,4 +1,10 @@
-.programme--tbl {
+.tickets--info {
+  text-align: center;
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+.tickets--tbl {
     border-radius: 4px;
     border: 1px solid #dfdfe0;
     width: 100%;
@@ -8,20 +14,20 @@
     }
 
     td {
-      padding: 4px 9px;
+      padding: 10px 20px;
     }
 
     td:first-child {
       background-color: #efefef;
       text-align: center;
 
-        .programme--days {
+        .tickets--days {
           font-size: 1.5em;
           font-weight: bolder;
           line-height: 1.0;
         }
 
-        .programme--dates {
+        .tickets--dates {
             font-size: 1.2em;
             font-weight: bold;
         }
